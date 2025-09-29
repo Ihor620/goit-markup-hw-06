@@ -238,6 +238,8 @@ li {
 .advantages-container_section {
   width: 320px;
   /* padding: 120px 0; */
+  margin: 0 auto;
+  padding: 96px 16px;
 }
 
 .visually-hidden {
@@ -265,8 +267,6 @@ li {
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .advantages-list {
@@ -276,7 +276,6 @@ li {
   gap: 72px;
   justify-content: center;
   align-items: center;
-  padding: 96px 16px;
 }
 
 .advantages-li {
@@ -300,14 +299,17 @@ li {
 
 .section-team {
   background-color: #f4f4fd;
-  width: 100%;
-  padding: 120px 0 120px 0;
+  padding: 96px 28px;
+  /* width: 100%;
+  padding: 120px 0 120px 0; */
 }
 
 .team-list {
   display: flex;
-  flex-direction: row;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 0;
+  /* flex-direction: row; */
+  /* gap: 24px; */
   justify-content: center;
 }
 
@@ -330,12 +332,14 @@ li {
 
 .team-list-names {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  width: 264px;
+  /* width: calc((100% - 72px) / 4); */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background: #ffffff;
-  gap: 8px;
+  /* gap: 8px; */
+  margin-bottom: 72px;
 }
 
 .team-header-name {
@@ -491,8 +495,7 @@ li {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer-logo_box {
@@ -506,7 +509,7 @@ li {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   background-color: #2e2f42;
-  padding: 100px 0 100px;
+  padding: 96px 16px;
 }
 
 /*.footer-media_box {
@@ -885,6 +888,22 @@ a {
   .advantages-li {
     width: calc((100% - 24px) / 2);
   }
+
+  .advantages-p {
+    width: 356px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-list-names {
+    margin-bottom: 40px;
+  }
+
+  .body-footer {
+    padding: 96px 164px 96px 108px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -945,5 +964,32 @@ a {
     font-weight: 500;
     text-align: left;
     margin-bottom: 8px;
+  }
+
+  .section-team {
+    width: 100%;
+    padding: 120px 0 120px 0;
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .team-list-names {
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .body-footer {
+    padding: 100px 0 100px;
   }
 }
