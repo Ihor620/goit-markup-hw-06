@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="body-header">
+    <header class="body-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo logo-header"
@@ -46,18 +46,92 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg width="18" height="16" class="icon_menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="menu-close_btn">
+            <svg width="8" height="8" class="mob-icon_close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-nav-list">
+              <li class="mob-menu-item">
+                <a href="./index.html" class="mob-element current">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-element">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-element">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li>
+                <a href="tel:+110001111111" class="mob-address-element"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-address-element"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon_list">
+            <li class="mob-icon_element">
+              <a href="#" class="mob-icon_link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon_element">
+              <a href="#" class="mob-icon_link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon_element">
+              <a href="#" class="mob-icon_link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon_element">
+              <a href="#" class="mob-icon_link">
+                <svg width="24" height="24" class="mob-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- MAIN -->
     <main>
       <!-- HERO S1-->
-      <!-- <section id="hero" class="main-hero">
+      <section id="hero" class="main-hero">
         <div class="container main-hero-container">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ADVANTAGES S2 -->
       <section id="advantages" class="advantages-container_section">
@@ -524,7 +598,7 @@
 
     <!-- Backdrop -->
 
-    <!-- <div class="backdrop">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close_btn">
           <svg width="8" height="8" class="icon_close">
@@ -614,6 +688,6 @@
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
-    </div>  -->
+    </div>
   </body>
 </html>
