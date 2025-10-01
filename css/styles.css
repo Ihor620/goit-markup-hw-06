@@ -954,9 +954,12 @@ li {
 
 a {
   line-height: 133%;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+
+.privacy-link {
+  text-decoration: underline;
 }
 
 .modal-check_box {
@@ -1012,6 +1015,7 @@ a {
 
   .header-container {
     width: 768px;
+    padding: 0;
   }
 
   .menu-open-btn {
